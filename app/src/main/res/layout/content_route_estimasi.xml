@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="30dp"
+        android:alpha="0.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_height="2dp"
+            android:background="@color/colorSecondaryDarkGrey"
+            android:paddingTop="5dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_height="2dp"
+            android:background="@color/colorSecondaryDarkGrey"
+            android:layout_marginTop="3dp">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:weightSum="12">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:12"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Est Waktu Sampai"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_height="70dp">
+            <Button
+                android:gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_marker_pertamina"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:text="2">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textStyle="bold"
+                    android:textSize="24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Km"
+                    android:textStyle="bold"
+                    android:textSize="24dp"/>
+            </LinearLayout>
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Est Jarak"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/item_menuju_pengantaran"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondaryGrey"
+    tools:context="com.app.komo.pertaminadmd.activity.HistoriPengantaran">
+
+    <include layout="@layout/title_bar" android:id="@+id/title_bar"/>
+
+    <include layout="@layout/table_histori_pengantaran"/>
+
+    <include layout="@layout/navigation" android:id="@+id/navigation_bar" android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>
